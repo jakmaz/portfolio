@@ -1,33 +1,61 @@
-const projects = [
+"use client";
+
+import { motion } from "framer-motion";
+
+const ProjectsData = [
   {
-    title: "LogEly",
-    description: "Minimalistic HTTP logging middleware",
-    icon: "📝", // Replace this with the actual icon component or image
+    id: 1,
+    name: "LogEly",
+    description: "Ready-to-use UI elements designed for rapid development.",
+    link: "https://syntaxui.com",
+    image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
   },
   {
-    title: "ElyNext",
-    description: "Public template for fast and modern development",
-    icon: "🦊", // Replace this with the actual icon component or image
+    id: 2,
+    name: "ElyNext",
+    description: "A curated collection of portfolios for inspiration.",
+    link: "https://prettyfolio.com",
+    image: "https://ansubkhan.com/images/projects/prettyfolio.png",
   },
 ];
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-8">
-      <h2 className="text-xl font-semibold">Projects</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-x-10 gap-y-5">
-        {projects.map((project) => (
-          <div
-            key={project.title}
-            className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            <div className="flex flex-col gap-2">
-              <div className="text-2xl">{project.icon}</div>
-              <h3 className="font-semibold">{project.title}</h3>
-              <p className="text-gray-600">{project.description}</p>
-            </div>
-          </div>
-        ))}
+    <div>
+      <h1 className="capitalize font-medium text-lg my-2">Projects</h1>
+      <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
+        {ProjectsData.map((project) => {
+          return (
+            <motion.div
+              whileHover={{
+                y: -8,
+              }}
+              transition={{
+                type: "spring",
+                bounce: 0.7,
+              }}
+              key={project.id}
+              className="mt-5 text-left"
+            >
+              <a target="_blank" rel="noopener noreferrer" href={project.link}>
+                <div></div>
+                {/* <Image */}
+                {/*   src={project.image} */}
+                {/*   width={30} */}
+                {/*   height={30} */}
+                {/*   className="mb-3 rounded-lg border-gray-400 dark:border" */}
+                {/*   alt={project.name} */}
+                {/* /> */}
+                <div className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
+                  {project.name}
+                </div>
+                <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
+                  {project.description}
+                </div>
+              </a>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
