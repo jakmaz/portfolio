@@ -1,15 +1,15 @@
 import markdownToHtml from "@/lib/markdown";
 import markdownStyles from "@/components/markdown-styles.module.css";
-import { getAllPosts, getPostByTitle } from "@/lib/postsUtils";
+import { getAllPosts, getPostBySlug } from "@/lib/postsUtils";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type Params = {
-  title: string;
+  slug: string;
 };
 
 export default async function Post({ params }: { params: Params }) {
-  const post = getPostByTitle(params.title);
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -29,7 +29,7 @@ export default async function Post({ params }: { params: Params }) {
 }
 
 export function generateMetadata({ params }: { params: Params }): Metadata {
-  const post = getPostByTitle(params.title);
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -46,6 +46,6 @@ export async function generateStaticParams() {
   const posts = getAllPosts();
 
   return posts.map((post) => ({
-    title: post.title,
+    slug: post.slug,
   }));
 }
