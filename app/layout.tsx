@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Hero from "@/components/hero";
 import { Separator } from "@/components/ui/separator";
@@ -24,6 +25,7 @@ export default function RootLayout({
             <Navbar />
             <div className="animate-fade-in-up">{children}</div>
             <Footer />
+            <SpeedInsights />
           </div>
         </main>
       </body>
