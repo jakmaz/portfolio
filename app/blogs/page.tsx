@@ -2,15 +2,19 @@ import { getAllPosts } from "@/lib/postsUtils";
 import Link from "next/link";
 
 export default async function Blogs() {
-  const posts = getAllPosts(); // Fetch all posts directly in the component
+  const posts = getAllPosts();
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       {posts.map((post) => (
         <Link href={`/blogs/${post.slugTitle}`} key={post.slugTitle}>
-          <div className="block p-6 mb-6 bg-gray-100 rounded-lg">
-            <h2 className="text-xl font-semibold">{post.title}</h2>
-            <p className="text-gray-600">{post.excerpt}</p>
+          <div className="flex flex-col w-full space-y-1 rounded-lg bg-gray-50/50 hover:bg-white py-3 pl-3 border border-gray-200">
+            <h2 className="text-gray-900 text-lg font-heading tracking-tight">
+              {post.title}
+            </h2>
+            <p className="text-gray-500 text-sm tracking-tight mt-1">
+              {post.excerpt}
+            </p>
           </div>
         </Link>
       ))}

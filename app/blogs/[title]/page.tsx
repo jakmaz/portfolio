@@ -1,4 +1,5 @@
 import markdownToHtml from "@/lib/markdown";
+import markdownStyles from "@/components/markdown-styles.module.css";
 import { getAllPosts, getPostByTitle } from "@/lib/postsUtils";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -13,9 +14,13 @@ export default async function Post({ params }: { params: { title: string } }) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <main>
+    <div className="flex flex-col gap-2">
       <h1>{post.title}</h1>
-    </main>
+      <div
+        dangerouslySetInnerHTML={{ __html: content }}
+        className={markdownStyles["markdown"]}
+      />
+    </div>
   );
 }
 
