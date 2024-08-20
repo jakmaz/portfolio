@@ -4,7 +4,11 @@ import { getAllPosts, getPostByTitle } from "@/lib/postsUtils";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-export default async function Post({ params }: { params: { title: string } }) {
+type Params = {
+  title: string;
+};
+
+export default async function Post({ params }: { params: Params }) {
   const post = getPostByTitle(params.title);
 
   if (!post) {
@@ -24,11 +28,7 @@ export default async function Post({ params }: { params: { title: string } }) {
   );
 }
 
-export function generateMetadata({
-  params,
-}: {
-  params: { title: string };
-}): Metadata {
+export function generateMetadata({ params }: { params: Params }): Metadata {
   const post = getPostByTitle(params.title);
 
   if (!post) {

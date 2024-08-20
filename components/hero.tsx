@@ -24,7 +24,7 @@ export default function Hero() {
       <h1 className="font-medium text-gray-900 text-xl font-heading">
         Jakub Mazur
       </h1>
-      <p className="text-gray-500">Student &amp; Coding Passionate</p>
+      <p className="text-gray-500">CS Student &amp; Coding Passionate</p>
       <div className="flex flex-row gap-3 mt-6">
         {socialLinks.map((link, index) => (
           <a
