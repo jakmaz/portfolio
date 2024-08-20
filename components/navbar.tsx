@@ -45,8 +45,11 @@ const Tab = ({ text, href, selected, setSelected }: TabProps) => {
 
 export default function Navbar() {
   const pathname = usePathname();
+
   const currentTab =
-    tabs.find((tab) => tab.href === pathname)?.title || tabs[0].title;
+    tabs.find((tab) =>
+      tab.href === "/" ? pathname === tab.href : pathname.startsWith(tab.href),
+    )?.title || tabs[0].title;
 
   return (
     <div className="flex flex-wrap items-center gap-2">
