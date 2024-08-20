@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const tabs = [
   { title: "About", href: "/" },
@@ -44,7 +44,9 @@ const Tab = ({ text, href, selected, setSelected }: TabProps) => {
 };
 
 export default function Navbar() {
-  const [selected, setSelected] = useState<string>(tabs[0].title);
+  const pathname = usePathname();
+  const currentTab =
+    tabs.find((tab) => tab.href === pathname)?.title || tabs[0].title;
 
   return (
     <div className="flex flex-wrap items-center gap-2">
@@ -52,8 +54,8 @@ export default function Navbar() {
         <Tab
           text={tab.title}
           href={tab.href}
-          selected={selected === tab.title}
-          setSelected={setSelected}
+          selected={currentTab === tab.title}
+          setSelected={() => {}}
           key={tab.title}
         />
       ))}

@@ -22,7 +22,7 @@ export default function RootLayout({
             <Hero />
             <Separator />
             <Navbar />
-            {children}
+            <div className="animate-fade-in-up">{children}</div>
             <Footer />
           </div>
         </main>

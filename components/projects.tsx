@@ -4,17 +4,15 @@ import { motion } from "framer-motion";
 
 const ProjectsData = [
   {
-    id: 1,
     name: "LogEly",
-    description: "Ready-to-use UI elements designed for rapid development.",
-    link: "https://syntaxui.com",
+    description: "Logging middleware for Bun's Elysia web framework.",
+    link: "https://github.com/jakmaz/logely",
     image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
   },
   {
-    id: 2,
     name: "ElyNext",
-    description: "A curated collection of portfolios for inspiration.",
-    link: "https://prettyfolio.com",
+    description: "Starter template for fast and modern full-stack development.",
+    link: "https://github.com/jakmaz/elynext",
     image: "https://ansubkhan.com/images/projects/prettyfolio.png",
   },
 ];
@@ -34,7 +32,7 @@ export default function Projects() {
                 type: "spring",
                 bounce: 0.7,
               }}
-              key={project.id}
+              key={project.name}
               className="mt-5 text-left"
             >
               <a target="_blank" rel="noopener noreferrer" href={project.link}>
