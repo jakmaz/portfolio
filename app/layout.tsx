@@ -24,9 +24,9 @@ export default function RootLayout({
             <Separator />
             <Navbar />
             <div className="animate-fade-in-up">{children}</div>
-            <Footer />
             <SpeedInsights />
           </div>
+          <Footer />
         </main>
       </body>
     </html>
