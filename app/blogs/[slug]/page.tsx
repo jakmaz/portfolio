@@ -1,8 +1,9 @@
 import markdownToHtml from "@/lib/markdown";
 import markdownStyles from "@/components/markdown-styles.module.css";
-import { getAllPosts, getPostBySlug } from "@/lib/postsUtils";
+import { getAllPosts, getPostBySlug } from "@/lib/postsLoaders";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { PostHeader } from "@/components/blog/post-header";
 
 type Params = {
   slug: string;
@@ -19,7 +20,7 @@ export default async function Post({ params }: { params: Params }) {
 
   return (
     <div className="flex flex-col gap-2">
-      <h1>{post.title}</h1>
+      <PostHeader post={post} />
       <div
         dangerouslySetInnerHTML={{ __html: content }}
         className={markdownStyles["markdown"]}

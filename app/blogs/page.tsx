@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/postsUtils";
+import { getAllPosts } from "@/lib/postsLoaders";
 import Link from "next/link";
 
 export default async function Blogs() {

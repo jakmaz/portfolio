@@ -1,0 +1,24 @@
+import { Post } from "@/lib/types";
+import { format, formatDistanceToNow } from "date-fns";
+
+export function PostHeader({ post }: { post: Post }) {
+  const formattedDate = format(post.date, "MMMM d, yyyy");
+  const relativeTime = formatDistanceToNow(post.date, { addSuffix: true });
+
+  return (
+    <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
+        <h1 className="title font-medium text-2xl md:text-4xl tracking-tighter font-heading">
+          {post.title}
+        </h1>
+        <div className="flex justify-start gap-2 items-center text-sm text-neutral-600 dark:text-neutral-400">
+          <p>
+            {formattedDate} ({relativeTime})
+          </p>
+          <p> - </p>
+          <p> 100 views </p>
+        </div>
+      </div>
+    </div>
+  );
+}
