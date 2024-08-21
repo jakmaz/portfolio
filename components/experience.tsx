@@ -15,6 +15,7 @@ export const Experience = () => {
           </div>
           <div className="mb-4 text-sm font-normal text-gray-500">
             <a
+              className="hover:text-gray-700"
               href="https://www.maastrichtuniversity.nl/"
               target="_blank"
               rel="noopener noreferrer"
@@ -30,6 +31,7 @@ export const Experience = () => {
           </div>
           <div className="mb-4 text-sm font-normal text-gray-500">
             <a
+              className="hover:text-gray-700"
               href="https://www.zspkleszczow.pl/"
               target="_blank"
               rel="noopener noreferrer"

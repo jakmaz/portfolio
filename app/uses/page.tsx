@@ -72,7 +72,7 @@ type Item = {
 export default function Toolkit() {
   return (
     <div>
-      <p className="text-gray-500">
+      <p className="section-description">
         My ever-evolving toolkit, comprising both hardware and software. I try
         to keep this list updated as much as possible.
       </p>

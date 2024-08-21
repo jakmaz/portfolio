@@ -4,7 +4,7 @@ import Projects from "@/components/projects";
 export default function Home() {
   return (
     <div className="flex flex-col gap-12">
-      <p className="text-gray-500">
+      <p className="section-description">
         Driven by a passion for technology and development, dedicated to
         creating impactful software that makes a difference in people’s lives.
       </p>
