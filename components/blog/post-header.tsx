@@ -19,7 +19,7 @@ export function PostHeader({ post }: { post: Post }) {
           </p>
           <p> - </p>
           <Suspense fallback={<div className="blur-sm">100 views</div>}>
-            {/* <ShowViews slug={post.slug} /> */}
+            <ShowViews slug={post.slug} />
           </Suspense>
         </div>
       </div>
