@@ -20,7 +20,7 @@ const ProjectsData = [
 export default function Projects() {
   return (
     <div>
-      <h1 className="capitalize font-medium text-lg">Projects</h1>
+      <h2 className="capitalize font-medium text-lg">Projects</h2>
       <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
         {ProjectsData.map((project) => {
           return (

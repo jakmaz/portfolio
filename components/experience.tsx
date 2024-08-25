@@ -1,14 +1,14 @@
 export const Experience = () => {
   return (
     <div>
-      <h1 className="font-medium text-gray-900 mb-4 text-lg">Education</h1>
+      <h2 className="font-medium text-gray-900 mb-4 text-lg">Education</h2>
       <ol className="relative border-s border-gray-200">
         <li className="mb-10 ms-4">
           <div className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border"></div>
           <div className="flex flex-row items-center gap-2">
-            <div className="text-md font-medium text-gray-900">
+            <h3 className="text-md font-medium text-gray-900">
               Computer Science
-            </div>
+            </h3>
             <div className="inline-block uppercase text-xs rounded-full px-1 py-0 border border-gray-500 text-gray-500">
               present
             </div>
@@ -26,9 +26,9 @@ export const Experience = () => {
         </li>
         <li className="ms-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border"></div>
-          <div className="text-md font-medium text-gray-900">
+          <h3 className="text-md font-medium text-gray-900">
             Automation Technician
-          </div>
+          </h3>
           <div className="mb-4 text-sm font-normal text-gray-500">
             <a
               className="hover:text-gray-700"

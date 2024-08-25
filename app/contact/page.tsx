@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="section-description flex items-center space-x-2">
-      <h1>Let &apos s work on something together, drop me a message here:</h1>
+    <div className="flex items-center space-x-2">
+      <p>Let &apos s work on something together, drop me a message here:</p>
       <a
         href="mailto:j.mazur.nl@gmail.com"
         className="text-black hover:text-gray-500"
