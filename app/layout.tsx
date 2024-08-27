@@ -14,9 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Jakub Mazur's personal website",
   keywords: ["Jakub Mazur", "portfolio", "developer"],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-  themeColor: "#ffffff",
   openGraph: {
     type: "website",
     locale: "en_US",
