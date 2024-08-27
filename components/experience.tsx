@@ -1,7 +1,7 @@
 export const Experience = () => {
   return (
     <div>
-      <h2 className="font-medium text-gray-900 mb-4 text-lg">Education</h2>
+      <h2 className="font-medium mb-4 text-lg">Education</h2>
       <ol className="relative border-s border-gray-200">
         <li className="mb-10 ms-4">
           <div className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border"></div>

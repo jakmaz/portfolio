@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   title: "Jakub Mazur Portfolio",
 };
 
-export const playfair = Playfair({
+const playfair = Playfair({
   subsets: ["latin"],
   weight: ["300"],
-  style: ["normal", "italic"],
+  style: ["normal"],
+  variable: "--font-playfair",
 });
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={playfair.variable}>
       <body>
         <main className="flex flex-col items-center justify-between w-full p-8 min-h-screen">
           <div className="flex flex-col gap-8 w-full max-w-3xl">

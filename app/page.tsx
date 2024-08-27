@@ -4,7 +4,7 @@ import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-14 mb-6">
       <p>
         Driven by a passion for technology and development, dedicated to
         creating impactful software that makes a difference in people’s lives.
