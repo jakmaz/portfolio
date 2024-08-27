@@ -21,9 +21,9 @@ const toolkit: { [key: string]: Item[] } = {
   ],
   Tools: [
     {
-      title: "NeoVim",
+      title: "Zed",
       description: "Favorite code editor",
-      link: "https://github.com/jakmaz/nvim",
+      link: "https://github.com/jakmaz/zed",
     },
     {
       title: "Raycast",
