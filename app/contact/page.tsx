@@ -1,7 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conact",
+};
+
 export default function Contact() {
   return (
     <div className="flex items-center space-x-2">
-      <p>Let &apos s work on something together, drop me a message here:</p>
+      <p>Let&apos;s work on something together, drop me a message here:</p>
       <a
         href="mailto:j.mazur.nl@gmail.com"
         className="text-black hover:text-gray-500"

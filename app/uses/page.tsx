@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 const toolkit: { [key: string]: Item[] } = {
   Desk: [
     {
@@ -67,6 +69,10 @@ type Item = {
   title: string;
   description: string;
   link?: string;
+};
+
+export const metadata: Metadata = {
+  title: "Uses",
 };
 
 export default function Toolkit() {

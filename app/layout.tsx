@@ -8,7 +8,30 @@ import { Playfair } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jakub Mazur Portfolio",
+  title: {
+    template: "%s | Jakub Mazur",
+    default: "Jakub Mazur",
+  },
+  description: "Jakub Mazur's personal website",
+  keywords: ["Jakub Mazur", "portfolio", "developer"],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  themeColor: "#ffffff",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.jakubmazur.com",
+    title: "Jakub Mazur",
+    description: "Jakub Mazur's personal website",
+    images: [
+      {
+        url: "https://www.jakubmazur.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jakub Mazur",
+      },
+    ],
+  },
 };
 
 const playfair = Playfair({

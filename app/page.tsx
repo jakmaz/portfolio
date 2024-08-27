@@ -7,7 +7,8 @@ export default function Home() {
     <div className="flex flex-col gap-14 mb-6">
       <p>
         Driven by a passion for technology and development, dedicated to
-        creating impactful software that makes a difference in people’s lives.
+        creating impactful software that makes a difference in people&apos;s
+        lives.
       </p>
       <Experience />
       <Projects />

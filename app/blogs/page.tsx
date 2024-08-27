@@ -1,5 +1,10 @@
 import BlogPreview from "@/components/blog-preview";
 import { getAllPosts } from "@/lib/postsLoaders";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blogs",
+};
 
 export default async function Blogs() {
   const posts = getAllPosts();

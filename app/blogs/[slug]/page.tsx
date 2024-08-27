@@ -1,9 +1,9 @@
-import markdownToHtml from "@/lib/markdown";
+import { PostHeader } from "@/components/blog/post-header";
 import markdownStyles from "@/components/markdown-styles.module.css";
+import markdownToHtml from "@/lib/markdown";
 import { getAllPosts, getPostBySlug } from "@/lib/postsLoaders";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { PostHeader } from "@/components/blog/post-header";
 
 type Params = {
   slug: string;
@@ -36,7 +36,7 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
     return notFound();
   }
 
-  const title = "Blog post";
+  const title = post.title;
 
   return {
     title,
