@@ -67,20 +67,12 @@
         @apply bg-background text-foreground;
     }
 
-    h2 {
-        @apply font-medium text-gray-900 text-lg;
-    }
-
-    h3 {
-        @apply text-gray-500;
-    }
-
-    p {
-        @apply text-gray-500;
-    }
-
     .link {
         @apply inline-block transition-transform duration-200 hover:scale-105;
+    }
+
+    .page-description {
+        @apply text-gray-500;
     }
 }
 

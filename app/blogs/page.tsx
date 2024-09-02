@@ -11,6 +11,10 @@ export default async function Blogs() {
 
   return (
     <div className="flex flex-col gap-2">
+      <p className="page-description mb-4">
+        Grab a coffee, kick back, and dive into some cool reads. I&apos;ve got a
+        little something for everyone.
+      </p>
       {posts.map((post) => (
         <BlogPreview
           key={post.slug}

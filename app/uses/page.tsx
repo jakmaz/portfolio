@@ -41,25 +41,25 @@ const toolkit: { [key: string]: Item[] } = {
       link: "https://www.notion.so/",
     },
     {
-      title: "Figma",
-      description: "For wireframing & prototyping",
-      link: "https://www.figma.com/",
-    },
-    {
       title: "Shottr",
       description: "For taking screenshots",
       link: "https://shottr.cc/",
+    },
+    {
+      title: "Excalidraw",
+      description: "Sketch diagrams like a pro.",
+      link: "https://excalidraw.com/",
     },
   ],
   Technologies: [
     {
       title: "Shadcn/ui",
-      description: "A collection of UI elements",
+      description: "Cool UI components for web apps.",
       link: "https://ui.shadcn.com/",
     },
     {
       title: "Aceternity",
-      description: "Amazing animated UI elements",
+      description: "Awesome animated UI stuff.",
       link: "https://ui.aceternity.com/",
     },
   ],
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 export default function Toolkit() {
   return (
     <div>
-      <p>
+      <p className="page-description">
         My ever-evolving toolkit, comprising both hardware and software. I try
         to keep this list updated as much as possible.
       </p>
