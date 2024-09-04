@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 const toolkit: { [key: string]: Item[] } = {
   Desk: [
     {
@@ -19,9 +21,9 @@ const toolkit: { [key: string]: Item[] } = {
   ],
   Tools: [
     {
-      title: "NeoVim",
+      title: "Zed",
       description: "Favorite code editor",
-      link: "https://github.com/jakmaz/nvim",
+      link: "https://github.com/jakmaz/zed",
     },
     {
       title: "Raycast",
@@ -39,25 +41,25 @@ const toolkit: { [key: string]: Item[] } = {
       link: "https://www.notion.so/",
     },
     {
-      title: "Figma",
-      description: "For wireframing & prototyping",
-      link: "https://www.figma.com/",
-    },
-    {
       title: "Shottr",
       description: "For taking screenshots",
       link: "https://shottr.cc/",
+    },
+    {
+      title: "Excalidraw",
+      description: "Sketch diagrams like a pro.",
+      link: "https://excalidraw.com/",
     },
   ],
   Technologies: [
     {
       title: "Shadcn/ui",
-      description: "A collection of UI elements",
+      description: "Cool UI components for web apps.",
       link: "https://ui.shadcn.com/",
     },
     {
       title: "Aceternity",
-      description: "Amazing animated UI elements",
+      description: "Awesome animated UI stuff.",
       link: "https://ui.aceternity.com/",
     },
   ],
@@ -69,18 +71,20 @@ type Item = {
   link?: string;
 };
 
+export const metadata: Metadata = {
+  title: "Uses",
+};
+
 export default function Toolkit() {
   return (
     <div>
-      <p className="section-description">
+      <p className="page-description">
         My ever-evolving toolkit, comprising both hardware and software. I try
         to keep this list updated as much as possible.
       </p>
       {Object.entries(toolkit).map(([sectionTitle, items], sectionIndex) => (
         <div key={sectionIndex}>
-          <h1 className="capitalize font-medium text-lg mt-5">
-            {sectionTitle}
-          </h1>
+          <p className="capitalize font-medium text-lg mt-5">{sectionTitle}</p>
           <ul className="list-disc text-gray-400 ml-5">
             {items.map((item, itemIndex) => (
               <li key={itemIndex} className="space-x-1 my-3">

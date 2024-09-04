@@ -21,10 +21,8 @@ const socialLinks = [
 export default function Hero() {
   return (
     <div className="flex flex-col">
-      <h1 className="font-medium text-gray-900 text-xl font-heading">
-        Jakub Mazur
-      </h1>
-      <p className="text-gray-500">CS Student &amp; Coding Passionate</p>
+      <h1 className="font-medium text-gray-900 text-xl">Jakub Mazur</h1>
+      <p>CS Student &amp; Coding Passionate</p>
       <div className="flex flex-row gap-3 mt-6">
         {socialLinks.map((link, index) => (
           <a

@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Journal",
+};
+
 export default function Journal() {
-  return <h1>Under construction</h1>;
+  return <p className="page-description">Under construction</p>;
 }
