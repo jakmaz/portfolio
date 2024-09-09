@@ -11,9 +11,9 @@ const ProjectsData = [
     image: "/images/projects/logely.svg",
   },
   {
-    name: "ElyNext",
-    description: "Starter template for fast and modern full-stack development.",
-    link: "https://github.com/jakmaz/elynext",
+    name: "AchieveMate",
+    description: "Steam achievemnt tracker for real completionists.",
+    link: "https://github.com/jakmaz/achieve-mate",
     image: "/images/projects/achievemate.svg",
   },
 ];
@@ -40,9 +40,9 @@ export default function Projects() {
                 <div></div>
                 <Image
                   src={project.image}
-                  width={40}
-                  height={40}
-                  className="mb-3 rounded-lg border-gray-400 dark:border"
+                  width={30}
+                  height={30}
+                  className="mb-3 rounded-md"
                   alt={project.name}
                 />
                 <div className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
