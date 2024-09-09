@@ -10,11 +10,13 @@ export default function Contact() {
       <p className="page-description">
         Let&apos;s work on something together, drop me a message here:{" "}
         <a
-          href="mailto:j.mazur.nl@gmail.com"
+          href="mailto:jakmaz.dev@icloud.com"
           className="text-black hover:text-gray-500"
         >
-          j.mazur.nl@gmail.com
+          jakmaz.dev@icloud.com
         </a>
+        <br />
+        Or use one of the social media links on the top!
       </p>
     </div>
   );

@@ -1,7 +1,7 @@
 export const Experience = () => {
   return (
-    <div>
-      <h2 className="mb-4">Education</h2>
+    <div className="flex flex-col gap-4">
+      <h2 className="section-title">Education</h2>
       <ol className="relative border-s border-gray-200">
         <li className="mb-10 ms-4">
           <div className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border"></div>

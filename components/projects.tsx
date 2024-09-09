@@ -1,26 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const ProjectsData = [
   {
     name: "LogEly",
     description: "Logging middleware for Bun's Elysia web framework.",
     link: "https://github.com/jakmaz/logely",
-    image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
+    image: "/images/projects/logely.svg",
   },
   {
-    name: "ElyNext",
-    description: "Starter template for fast and modern full-stack development.",
-    link: "https://github.com/jakmaz/elynext",
-    image: "https://ansubkhan.com/images/projects/prettyfolio.png",
+    name: "AchieveMate",
+    description: "Steam achievemnt tracker for real completionists.",
+    link: "https://github.com/jakmaz/achieve-mate",
+    image: "/images/projects/achievemate.svg",
   },
 ];
 
 export default function Projects() {
   return (
     <div>
-      <h2 className="capitalize font-medium text-lg">Projects</h2>
+      <h2 className="section-title">Projects</h2>
       <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
         {ProjectsData.map((project) => {
           return (
@@ -37,13 +38,13 @@ export default function Projects() {
             >
               <a target="_blank" rel="noopener noreferrer" href={project.link}>
                 <div></div>
-                {/* <Image */}
-                {/*   src={project.image} */}
-                {/*   width={30} */}
-                {/*   height={30} */}
-                {/*   className="mb-3 rounded-lg border-gray-400 dark:border" */}
-                {/*   alt={project.name} */}
-                {/* /> */}
+                <Image
+                  src={project.image}
+                  width={30}
+                  height={30}
+                  className="mb-3 rounded-md"
+                  alt={project.name}
+                />
                 <div className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
                   {project.name}
                 </div>

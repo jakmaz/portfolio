@@ -1,14 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Metadata } from "next";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
-export const metadata: Metadata = {
-  title: "Journal",
-};
-
-export default function Journal() {
+export default function JournalSection() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-2">
+      <h2 className="section-title">Journal</h2>
       <p className="page-description">
         A monthly glimpse into my development journey progress, challenges, and
         insights as I grow in both tech and life.
@@ -17,7 +13,6 @@ export default function Journal() {
         <Input type="email" placeholder="Email Address" />
         <Button className="bg-gray-800">Subscribe</Button>
       </div>
-      <div>Posts</div>
     </div>
   );
 }

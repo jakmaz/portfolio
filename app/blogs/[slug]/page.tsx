@@ -3,6 +3,7 @@ import markdownStyles from "@/components/markdown-styles.module.css";
 import markdownToHtml from "@/lib/markdown";
 import { getAllPosts, getPostBySlug } from "@/lib/postsLoaders";
 import { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type Params = {
@@ -20,6 +21,9 @@ export default async function Post({ params }: { params: Params }) {
 
   return (
     <div className="flex flex-col gap-2">
+      <Link href="/blogs" className="text-gray-600 hover:text-gray-900">
+        Back
+      </Link>
       <PostHeader post={post} />
       <div
         dangerouslySetInnerHTML={{ __html: content }}
