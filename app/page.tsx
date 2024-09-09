@@ -1,4 +1,5 @@
 import { Experience } from "@/components/experience";
+import JournalSection from "@/components/journal-section";
 import LatestBlogs from "@/components/latest-blogs";
 import Projects from "@/components/projects";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <LatestBlogs />
+      <JournalSection />
     </div>
   );
 }

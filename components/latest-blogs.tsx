@@ -7,7 +7,7 @@ export default async function LatestBlogs() {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2>Latest Blogs</h2>
+      <h2 className="section-title">Latest Blogs</h2>
       <div className="flex flex-col gap-2">
         {posts.map((post) => (
           <BlogPreview

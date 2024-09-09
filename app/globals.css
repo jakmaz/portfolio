@@ -71,6 +71,10 @@
         @apply inline-block transition-transform duration-200 hover:scale-105;
     }
 
+    .section-title {
+        @apply capitalize font-medium text-lg;
+    }
+
     .page-description {
         @apply text-gray-500;
     }

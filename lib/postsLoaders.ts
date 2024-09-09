@@ -1,8 +1,8 @@
+import { compareDesc } from "date-fns";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 import { Post } from "./types";
-import { compareDesc } from "date-fns";
 
 const postsDirectory = join(process.cwd(), "posts");
 
