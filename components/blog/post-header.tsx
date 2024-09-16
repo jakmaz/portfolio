@@ -1,9 +1,9 @@
-import { Post } from "@/lib/types";
+import { BlogPost } from "@/lib/types";
 import { format, formatDistanceToNow } from "date-fns";
 import { Suspense } from "react";
 import { ShowViews } from "./show-views";
 
-export function PostHeader({ post }: { post: Post }) {
+export function PostHeader({ post }: { post: BlogPost }) {
   const formattedDate = format(post.date, "MMMM d, yyyy");
   const relativeTime = formatDistanceToNow(post.date, { addSuffix: true });
 

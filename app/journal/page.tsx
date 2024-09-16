@@ -1,3 +1,4 @@
+import JournalPreview from "@/components/journal/journal-preview";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Metadata } from "next";
@@ -18,6 +19,11 @@ export default function Journal() {
         <Button className="bg-gray-800">Subscribe</Button>
       </div>
       <div>Posts</div>
+      <JournalPreview
+        slug="september-2024"
+        date="September 2024"
+        title="Story begins"
+      />
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import BlogPreview from "@/components/blog-preview";
-import { getAllPosts } from "@/lib/postsLoaders";
+import { getAllBlogPosts } from "@/lib/postsLoaders";
 import Link from "next/link";
 
 export default async function LatestBlogs() {
-  const posts = getAllPosts().slice(0, 2); // Display the latest two blogs
+  const posts = getAllBlogPosts().slice(0, 2); // Display the latest two blogs
 
   return (
     <section className="flex flex-col gap-4">

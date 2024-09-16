@@ -1,5 +1,5 @@
 import BlogPreview from "@/components/blog-preview";
-import { getAllPosts } from "@/lib/postsLoaders";
+import { getAllBlogPosts } from "@/lib/postsLoaders";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Blogs() {
-  const posts = getAllPosts();
+  const posts = getAllBlogPosts();
 
   return (
     <div className="flex flex-col gap-2">
