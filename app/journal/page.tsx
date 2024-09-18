@@ -1,6 +1,5 @@
 import JournalPreview from "@/components/journal/journal-preview";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import Subscribe from "@/components/subscribe";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,10 +13,7 @@ export default function Journal() {
         A monthly glimpse into my development journey progress, challenges, and
         insights as I grow in both tech and life.
       </p>
-      <div className="flex gap-2">
-        <Input type="email" placeholder="Email Address" />
-        <Button className="bg-gray-800">Subscribe</Button>
-      </div>
+      <Subscribe />
       <div>Posts</div>
       <JournalPreview
         slug="september-2024"
