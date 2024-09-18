@@ -14,12 +14,14 @@ export default function Journal() {
         insights as I grow in both tech and life.
       </p>
       <Subscribe />
-      <div>Posts</div>
-      <JournalPreview
-        slug="september-2024"
-        date="September 2024"
-        title="Story begins"
-      />
+      <div className="flex flex-col gap-2">
+        <p>Past Issues</p>
+        <JournalPreview
+          slug="september-2024"
+          date="September 2024"
+          title="Story begins"
+        />
+      </div>
     </div>
   );
 }
