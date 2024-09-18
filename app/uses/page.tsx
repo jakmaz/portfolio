@@ -47,19 +47,24 @@ const toolkit: { [key: string]: Item[] } = {
     },
     {
       title: "Excalidraw",
-      description: "Sketch diagrams like a pro.",
+      description: "Sketch diagrams like a pro",
       link: "https://excalidraw.com/",
+    },
+    {
+      title: "Screenzen",
+      description: "Real productivity life-changer.",
+      link: "https://www.screenzen.co/",
     },
   ],
   Technologies: [
     {
       title: "Shadcn/ui",
-      description: "Cool UI components for web apps.",
+      description: "Cool UI components for web apps",
       link: "https://ui.shadcn.com/",
     },
     {
       title: "Aceternity",
-      description: "Awesome animated UI stuff.",
+      description: "Awesome animated UI stuff",
       link: "https://ui.aceternity.com/",
     },
   ],
