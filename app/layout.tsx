@@ -2,6 +2,7 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import { Separator } from "@/components/ui/separator";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Playfair } from "next/font/google";
@@ -54,6 +55,7 @@ export default function RootLayout({
             <Navbar />
             <div className="animate-fade-in-up">{children}</div>
             <SpeedInsights />
+            <Analytics />
           </div>
           <Footer />
         </main>
