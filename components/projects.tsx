@@ -3,18 +3,25 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+// logofa.st, no padding, 400 px size, 2 px border radius
 const ProjectsData = [
   {
-    name: "LogEly",
-    description: "Logging middleware for Bun's Elysia web framework.",
-    link: "https://github.com/jakmaz/logely",
-    image: "/images/projects/logely.svg",
+    name: "Roadwise",
+    description: "Gather user feedback and ideas for your project.",
+    link: "https://roadwiseapp.vercel.app",
+    image: "/images/projects/roadwise.svg",
   },
   {
-    name: "AchieveMate",
-    description: "Steam achievemnt tracker for real completionists.",
-    link: "https://github.com/jakmaz/achieve-mate",
-    image: "/images/projects/achievemate.svg",
+    name: "SafeScan",
+    description: "Check text for safety and moderation issues instantly.",
+    link: "https://safescan.jakmaz.com",
+    image: "/images/projects/safescan.svg",
+  },
+  {
+    name: "Albumfy",
+    description: "Create and print custom posters from Spotify albums.",
+    link: "https://albumfy.jakmaz.com",
+    image: "/images/projects/albumfy.svg",
   },
 ];
 
@@ -40,8 +47,8 @@ export default function Projects() {
                 <div></div>
                 <Image
                   src={project.image}
-                  width={30}
-                  height={30}
+                  width={32}
+                  height={32}
                   className="mb-3 rounded-md"
                   alt={project.name}
                 />
