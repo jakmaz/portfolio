@@ -15,7 +15,7 @@ export default function TechStack() {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="section-title">Technologies</h2>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {technologies.map((tech, index) => (
           <div key={index} className="flex items-center gap-2 justfy">
             <Image
