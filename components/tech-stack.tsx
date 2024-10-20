@@ -3,7 +3,7 @@ import Image from "next/image";
 const technologies = [
   { name: "Next.js", icon: "nextjs" },
   { name: "React", icon: "react" },
-  { name: "Tailwind CSS", icon: "tailwindcss" },
+  { name: "TailwindCSS", icon: "tailwindcss" },
   { name: "Docker", icon: "docker" },
   { name: "Node.js", icon: "nodejs" },
   { name: "TypeScript", icon: "typescript" },
