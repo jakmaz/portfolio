@@ -24,7 +24,7 @@ export default function TechStack() {
               width={24}
               height={24}
             />
-            <p className="text-lg text-gray-700">{tech.name}</p>
+            <p className="text-md text-gray-600">{tech.name}</p>
           </div>
         ))}
       </div>
