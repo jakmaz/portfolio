@@ -6,7 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-    @apply my-6 text-gray-800 text-base;
+    @apply my-6 text-gray-900 text-base;
 }
 
 .markdown h2 {
@@ -15,4 +15,8 @@
 
 .markdown h3 {
     @apply text-2xl text-black mt-8 mb-4 leading-snug;
+}
+
+.markdown a {
+    @apply text-black font-bold;
 }
