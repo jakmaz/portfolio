@@ -7,7 +7,7 @@ This month,  I started working on **Roadwise**, a new idea for a roadmap creatio
 
 Aside from working on this new idea, I also spent time preparing for my upcoming university exams. Balancing both the app development and exam prep has been challenging but rewarding.
 
-I also discovered two fantastic YouTube channels this month: **T3dotgg** and **ThePrimeTimeagen**. Both channels are packed with tech news, coding tips, and valuable insights, helping me level up in both frontend and backend development.
+I also discovered two fantastic YouTube channels this month: **T3dotgg** and **ThePrimeTime**. Both channels are packed with tech news, coding tips, and valuable insights, helping me level up in both frontend and backend development.
 
 ### Quote of the Month:
 “Programming is learned by writing programs.” ― Brian Kernighan
@@ -15,4 +15,4 @@ I also discovered two fantastic YouTube channels this month: **T3dotgg** and **T
 ### Bookmarks:
 
 - [T3dotgg](https://www.youtube.com/@t3dotgg) – Delivers tech news faster than JavaScript developers create new frameworks.
-- [ThePrimeTimeagen](https://www.youtube.com/@ThePrimeTimeagen) –  Big brain, bigger ego, but always dropping knowledge bombs.
+- [ThePrimeTime](https://www.youtube.com/@ThePrimeTimeagen) –  Big brain, bigger ego, but always dropping knowledge bombs.

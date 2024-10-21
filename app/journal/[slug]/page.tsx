@@ -1,3 +1,4 @@
+import { PostHeader } from "@/components/journal/post-header";
 import markdownStyles from "@/components/markdown-styles.module.css";
 import markdownToHtml from "@/lib/markdown";
 import { getAllJournalPosts, getJournalPostBySlug } from "@/lib/postsLoaders"; // Adjust to import the correct journal functions
@@ -23,7 +24,7 @@ export default async function JournalPost({ params }: { params: Params }) {
       <Link href="/journal" className="text-gray-600 hover:text-gray-900">
         Back
       </Link>
-      {/* You may want to customize this for journal posts */}
+      <PostHeader post={post} />
       <div
         dangerouslySetInnerHTML={{ __html: content }}
         className={markdownStyles["markdown"]}
