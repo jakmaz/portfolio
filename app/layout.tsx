@@ -13,24 +13,9 @@ export const metadata: Metadata = {
     template: "%s | Jakub Mazur",
     default: "Jakub Mazur",
   },
-  description: "Jakub Mazur's personal website",
+  description: "Full Stack Developer",
   keywords: ["Jakub Mazur", "portfolio", "developer"],
   robots: "index, follow",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://www.jakubmazur.com",
-    title: "Jakub Mazur",
-    description: "Jakub Mazur's personal website",
-    images: [
-      {
-        url: "https://www.jakubmazur.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jakub Mazur",
-      },
-    ],
-  },
 };
 
 const playfair = Playfair({
