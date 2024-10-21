@@ -1,6 +1,6 @@
 ---
 month: "September 2024"
-title: "The Beginning of My Full-Stack Journey"
+title: "Story begins"
 ---
 
 This month marked a turning point for me as I began taking full-stack development more seriously. I’ve realized that building web applications is something I truly enjoy, especially knowing they can be accessed from anywhere in the world. It’s an amazing and rewarding experience to create something that lives online.

@@ -1,5 +1,6 @@
 import JournalPreview from "@/components/journal/journal-preview";
 import Subscribe from "@/components/subscribe";
+import { getAllJournalPosts } from "@/lib/postsLoaders";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default function Journal() {
+  const posts = getAllJournalPosts();
+
   return (
     <div className="flex flex-col gap-8">
       <p className="page-description">
@@ -16,11 +19,14 @@ export default function Journal() {
       <Subscribe />
       <div className="flex flex-col gap-2">
         <p>Past Issues</p>
-        <JournalPreview
-          slug="september-2024"
-          date="September 2024"
-          title="Story begins"
-        />
+        {posts.map((post) => (
+          <JournalPreview
+            key={post.slug}
+            slug={post.slug}
+            date={post.month}
+            title={post.title}
+          />
+        ))}
       </div>
     </div>
   );
