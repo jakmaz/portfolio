@@ -23,6 +23,7 @@ export default function TechStack() {
               alt={tech.name}
               width={24}
               height={24}
+              className="opacity-80"
             />
             <p className="text-md text-gray-600">{tech.name}</p>
           </div>
