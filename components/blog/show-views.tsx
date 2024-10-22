@@ -3,7 +3,7 @@ import crypto from "crypto";
 import { headers } from "next/headers";
 
 async function recordViewCount(slug: string) {
-  const headersList = headers();
+  const headersList = await headers();
   const forwardedFor = headersList.get("x-forwarded-for");
   const realIp = headersList.get("x-real-ip");
 

@@ -10,7 +10,8 @@ type Params = {
   slug: string;
 };
 
-export default async function JournalPost({ params }: { params: Params }) {
+export default async function JournalPost(props: { params: Promise<Params> }) {
+  const params = await props.params;
   const post = getJournalPostBySlug(params.slug); // Use the correct function for journal posts
 
   if (!post) {
@@ -33,7 +34,8 @@ export default async function JournalPost({ params }: { params: Params }) {
   );
 }
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
+export async function generateMetadata(props: { params: Promise<Params> }): Promise<Metadata> {
+  const params = await props.params;
   const post = getJournalPostBySlug(params.slug); // Use journal-specific function
 
   if (!post) {

@@ -10,7 +10,8 @@ type Params = {
   slug: string;
 };
 
-export default async function Post({ params }: { params: Params }) {
+export default async function Post(props: { params: Promise<Params> }) {
+  const params = await props.params;
   const post = getBlogPostBySlug(params.slug);
 
   if (!post) {
@@ -33,7 +34,8 @@ export default async function Post({ params }: { params: Params }) {
   );
 }
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
+export async function generateMetadata(props: { params: Promise<Params> }): Promise<Metadata> {
+  const params = await props.params;
   const post = getBlogPostBySlug(params.slug);
 
   if (!post) {
