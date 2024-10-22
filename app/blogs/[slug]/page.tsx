@@ -6,6 +6,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export const revalidate = 60;
+
 type Params = {
   slug: string;
 };
@@ -34,7 +36,9 @@ export default async function Post(props: { params: Promise<Params> }) {
   );
 }
 
-export async function generateMetadata(props: { params: Promise<Params> }): Promise<Metadata> {
+export async function generateMetadata(props: {
+  params: Promise<Params>;
+}): Promise<Metadata> {
   const params = await props.params;
   const post = getBlogPostBySlug(params.slug);
 

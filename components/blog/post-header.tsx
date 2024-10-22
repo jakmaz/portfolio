@@ -1,6 +1,5 @@
 import { BlogPost } from "@/lib/types";
 import { format, formatDistanceToNow } from "date-fns";
-import { Suspense } from "react";
 import { ShowViews } from "./show-views";
 
 export function PostHeader({ post }: { post: BlogPost }) {
@@ -18,9 +17,7 @@ export function PostHeader({ post }: { post: BlogPost }) {
             {formattedDate} ({relativeTime})
           </p>
           <p> - </p>
-          <Suspense fallback={<div className="blur-sm">100 views</div>}>
-            <ShowViews slug={post.slug} />
-          </Suspense>
+          <ShowViews slug={post.slug} />
         </div>
       </div>
     </div>
