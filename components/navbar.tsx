@@ -35,6 +35,7 @@ const Tab = ({ text, href, selected, setSelected }: TabProps) => {
           <motion.span
             layoutId="tab"
             transition={{ type: "spring", duration: 0.4 }}
+            //@ts-ignore
             className="absolute inset-0 z-0 bg-gray-800 rounded-md"
           ></motion.span>
         )}

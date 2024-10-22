@@ -41,6 +41,7 @@ export default function Projects() {
                 bounce: 0.7,
               }}
               key={project.name}
+              //@ts-ignore
               className="mt-5 text-left"
             >
               <a target="_blank" rel="noopener noreferrer" href={project.link}>
